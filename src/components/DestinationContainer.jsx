@@ -40,14 +40,15 @@ function DestinationContainer() {
 
   return (
     // <DestinationCard/>
-    <>
+    <div>
+    
       {destinations.length > 0 &&
         destinations.map((place, i) => (
           <div key={i}>
             <DestinationCard props={place} />
           </div>
         ))}
-    </>
+    </div>
   );
 }
 
